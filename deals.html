@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Christmas Store</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<link rel ="stylesheet" href="style.css" type="text/css"> 
+	<style>
+		th,td,tr{
+			border: 1px dotted gray;
+		}
+		.fond{
+  
+  top:0;
+  left:0; 
+  right:0;
+  bottom:0;
+  display: flex;
+  padding: 20px;
+}
+		.carreaux_presentation_light
+{
+  display:table-cell;
+  width:30%; height:250px;
+  padding: 20px;
+  margin: 20px;
+  background-size:cover;
+  overflow: hidden;
+  position: relative;
+}
+.carreaux_presentation_light .shadow_swhow_mini
+{
+  background-color:rgba(19,30,33,0.2);
+  position: absolute;
+  z-index: 1000;
+  top:0;left:0;right:0;bottom:0;
+  
+}
+.carreaux_presentation_light:hover .shadow_swhow_mini
+{
+  background-color:rgba(16,23,16,0);
+}
+.carreaux_presentation_light .deroul_titre
+{
+  position: absolute;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  padding: 7px;
+  z-index: 1000;
+  top:60%;left:-80%;
+  color:#ffffff;
+  font-weight: 300;
+  font-size: 13px; width: 80%;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  transition: all 0.7s;
+
+}
+.carreaux_presentation_light:hover .deroul_titre
+{
+  background-color:#1e4944; left:0px;
+  
+}
+.carreaux_presentation_light .deroul_soustitre
+{
+  position: absolute;
+  font-family: 'Roboto';
+  padding: 5px;
+  z-index: 1000;
+  top:60%;right:-85%;
+  margin-top: 25px;
+  color:#ffffff;
+  font-weight: 300;
+  font-size: 11px; width: 80%;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  transition: all 0.7s;
+}
+.carreaux_presentation_light:hover .deroul_soustitre
+{
+  background-color:#417c74;right:0px;
+}
+
+	</style>
+</head>
+
+<body class="box-border h-132 w-132 px-12 py-8 border-4">
+	<header role = "banner"> 
+<h1 class="text-center font-bold box-decoration-clone bg-black text-white px-2 ...">Welcome to Our Christmas Store</h1> 
+    </header> 
+<nav>
+<ul class="text-center my-2" style="margin-top: 20px; margin-bottom: 20px;">
+	<button class="text-white font-bold py-2 px-4 mx-2  transition ease-in-out delay-150 bg-gray-500 hover:-translate-y-1 hover:scale-105 hover:bg-black duration-300 ...">
+		<a href="index.html">Home</a></button>
+		<button  class="text-white font-bold py-2 px-4 mx-2  transition ease-in-out delay-150 bg-gray-500 hover:-translate-y-1 hover:scale-105 hover:bg-black duration-300 ..."><li class="text-center"><a href="contact.html">Contact us</a> </li></button>
+		<button  class="text-white font-bold py-2 px-4 mx-2  transition ease-in-out delay-150 bg-gray-500 hover:-translate-y-1 hover:scale-105 hover:bg-black duration-300 ..."><li><a href="deals.html">Today&apos;s Deal</a> </li></button>
+</ul>
+</nav> 
+<article>
+	<h1 class="text-center font-bold box-decoration-clone bg-black text-white px-2">Best Holiday Deals</h1>
+	
+<section>			
+	<div class="fond">  
+  
+		<div class="carreaux_presentation_light" style="background-image:url(d.jpg);">
+		  <div class="shadow_swhow_mini">
+			  <div class="deroul_titre"> Christmas</div>
+			  <div class="deroul_soustitre"> Decorations</div>
+		  </div>
+		</div>
+		<div class="carreaux_presentation_light" style="background-image:url(r.jpg);">
+		  <div class="shadow_swhow_mini">
+			  <div class="deroul_titre"> Christmas</div>
+			  <div class="deroul_soustitre">Recipes</div>
+		  </div>
+		</div>
+		<div class="carreaux_presentation_light" style="background-image:url(t.jpg);">
+		  <div class="shadow_swhow_mini">
+			  <div class="deroul_titre">Christmas</div>
+			  <div class="deroul_soustitre">Toys</div>
+		  </div>
+		</div>
+
+	  </div>
+		</section>
+		<section class="center" style="margin-left:400px">
+			<table class="border-separate border border-slate-400 my-4">
+				<thead>
+				<tr class="bg-indigo-600">
+				<th style="background-color: #e57373; ">Name of the Iteams</th>
+				<th colspan="2" style="background-color: #ba68c8;">Orignal Price</th>
+				<th style="background-color: #7986cb;"> Today&apos;s Deal</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td style="background-color: #ffcdd2">christmas-tree</td>
+					<td style="background-color: #ce93d8;">$200</td>
+					<td style="background-color: #ce93d8">$150</td>
+					<td style="background-color: #9fa8da;">$100</td>
+				</tr>
+		
+				<tr class="bg-pink-500">
+					<td style="background-color: #ffebee ">christmas-tree-decoration</td>
+									  <td style="background-color: #e1bee7;">$100</td>
+									  <td style="background-color: #e1bee7;">$50</td>
+									  <td style="background-color: #c5cae9 ;">$25</td>
+					</tr>
+		
+				</tbody>
+				</table>
+			</section>
+		</article>
+		<h1 style="font-weight: bolder; font-size: large;"> Florida Institute of technology</h1>
+	  
+		<blockquote cite= "https://www.fit.edu/">
+
+		  STEM—science, technology, engineering and math—is the driving force behind who we are, what we do and why we exist. Whether you major in aerospace engineering or biomedical science, business or communications, you’re going to graduate with a toolbox of vital high-tech skills that puts you ahead of the competition in the job market.
+		</blockquote>
+	<strong>PDH</strong><br>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3520.76044538602!2d-80.62468448538006!3d28.06233818264622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88de1205235f1cc1%3A0x91d7a886e2c535d7!2sPanther%20Dining%20Hall!5e0!3m2!1sen!2sus!4v1674501176626!5m2!1sen!2sus" width="1300" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">PDH</iframe>
+</section>
+</article> 
+
+	<footer class="text-center"> &copy; 2022 shriyabhalodi</footer>
+	
+</body>
+</html>
